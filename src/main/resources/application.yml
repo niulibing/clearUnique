@@ -1,0 +1,26 @@
+server:
+  port: ${server_port:8080} #9012
+
+
+spring:
+  #mysql数据库配置
+  datasource:
+    url: jdbc:mysql://${mysql_url:117.187.225.202}:${mysql_port:3306}/${mysql_database:unique}?useSSL=false
+    username: ${mysql_username:root}
+    password: ${mysql_password:scmroot2019.com}
+    driver-class-name: com.mysql.jdbc.Driver
+    # 下面为连接池的补充设置，应用到上面所有数据源中
+    druid:
+      initial-size: 5
+      max-active: 30
+      min-idle: 5
+      max-wait: 3000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      filters: wall
+
+
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 10MB

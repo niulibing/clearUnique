@@ -1,7 +1,6 @@
 package cn.commdata.cleardatabase.controller;
 
 import cn.commdata.cleardatabase.common.BaseVO;
-import cn.commdata.cleardatabase.dao.IClearDao;
 import cn.commdata.cleardatabase.service.IClearUniqueService;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;

@@ -60,6 +60,7 @@ class ClearDatabaseApplicationTests {
                 .map(Employee::getName)
                 .collect(Collectors.toList()).forEach(System.out::println);
 
+       
 
     }
 

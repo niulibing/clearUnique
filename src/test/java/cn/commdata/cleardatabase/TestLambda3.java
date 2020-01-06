@@ -1,6 +1,11 @@
 package cn.commdata.cleardatabase;
 
 
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * Java8内置的四大核心函数式接口
  *
@@ -13,5 +18,16 @@ package cn.commdata.cleardatabase;
  * Predicate<T>: 断言型接口
  *              boolean test(T t)
  */
-public class TestLambda3 {
+public class   TestLambda3
+{
+
+    @Test
+    public void  test01(){
+
+
+        List<String> strings = Arrays.asList("aaa", "gg", "ff");
+
+        strings.stream().map(String::toUpperCase).forEach(System.out::println);
+
+    }
 }
